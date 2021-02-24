@@ -1,0 +1,46 @@
+.loading,
+.results,
+.worldData,
+.pieChartBox {
+  display: none;
+}
+
+.worldData {
+  padding: 0.6rem;
+  border-radius: 5px;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.06),
+    rgba(255, 255, 255, 0.15)
+  );
+  margin: 0;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to left, #dc3545, #ff0019);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 20% 20%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .ui {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ui.users-panel {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .backgroundImage {
+    display: none;
+  }
+}
